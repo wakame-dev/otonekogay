@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: black; /* 背景色を黒に設定 */
+  color: white; /* 文字色を白に設定 */
   font-family: 'M Plus 1p', sans-serif;
   display: flex;
   justify-content: center;
@@ -23,11 +23,12 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 100px; /* テキストを大きく */
   font-weight: bold;
   color: white; /* 白文字 */
+  text-align: center;
 }
 
 p {
-  font-size: 40px;
+  font-size: 80px;
 }
