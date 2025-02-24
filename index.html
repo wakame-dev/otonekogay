@@ -7,12 +7,20 @@
   <meta name="description" content="音猫はゲイ。">
   <link href="https://fonts.googleapis.com/css2?family=M+Plus+1p&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       background-color: black;
       color: white;
       font-family: 'M Plus 1p', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      margin-top: 50px;
     }
     .popup {
       display: none;
@@ -33,7 +41,9 @@
     }
     .popup-content {
       background-color: white;
-      padding: 20px;
+      padding: 50px;
+      width: 80%;
+      max-width: 600px;
       text-align: center;
       transform: scale(0.8);
       animation: popup-animation 0.5s forwards;
@@ -52,10 +62,14 @@
     .btn {
       background-color: white;
       color: black;
-      padding: 10px;
-      font-size: 20px;
+      padding: 20px 40px;
+      font-size: 30px;
       border: none;
       cursor: pointer;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 40px;
     }
     @keyframes popup-animation {
       0% {
@@ -71,8 +85,10 @@
   <title>音猫はゲイ。</title>
 </head>
 <body>
-  <p>音猫はゲイ</p>
-  <button class="btn" onclick="document.getElementById('popup').classList.add('show');">宣伝（ボタン）</button>
+  <div>
+    <p>音猫はゲイ</p>
+    <button class="btn" onclick="document.getElementById('popup').classList.add('show');">宣伝（ボタン）</button>
+  </div>
 
   <div class="popup" id="popup">
     <div class="popup-content">
