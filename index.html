@@ -1,1 +1,89 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="title" content="音猫はゲイ。"><meta name="description" content="音猫はゲイ。"><link href="https://fonts.googleapis.com/css2?family=M+Plus+1p&display=swap" rel="stylesheet"><style>body{background-color:black;color:white;font-family:'M Plus 1p',sans-serif;}.popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.7);justify-content:center;align-items:center;opacity:0;transition:opacity 0.5s ease-in-out;}.popup.show{display:flex;opacity:1;}.popup-content{background-color:white;padding:20px;text-align:center;transform:scale(0.8);animation:popup-animation 0.5s forwards;}.close-btn{position:absolute;top:10px;right:10px;background-color:red;color:white;border:none;padding:10px;font-size:20px;cursor:pointer;}.btn{background-color:white;color:black;padding:10px;font-size:20px;border:none;cursor:pointer;}@keyframes popup-animation{0%{transform:scale(0.8);opacity:0;}100%{transform:scale(1);opacity:1;}}</style><title>音猫はゲイ。</title></head><body><div class="popup" id="popup"><div class="popup-content"><button class="close-btn" onclick="document.getElementById('popup').style.display='none';">❌</button><p>楽しいサーバー！</p><a href="https://discord.gg/aa-bot" target="_blank"><button class="btn">宣伝</button></a></div></div><script>window.onload=function(){document.getElementById('popup').classList.add('show');}</script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="音猫はゲイ。">
+  <meta name="description" content="音猫はゲイ。">
+  <link href="https://fonts.googleapis.com/css2?family=M+Plus+1p&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'M Plus 1p', sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .popup.show {
+      display: flex;
+      opacity: 1;
+    }
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      transform: scale(0.8);
+      animation: popup-animation 0.5s forwards;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn {
+      background-color: white;
+      color: black;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    @keyframes popup-animation {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>音猫はゲイ。</title>
+</head>
+<body>
+  <p>音猫はゲイ</p>
+  <button class="btn" onclick="document.getElementById('popup').classList.add('show');">宣伝（ボタン）</button>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="document.getElementById('popup').style.display='none';">❌</button>
+      <p>楽しいサーバー！</p>
+      <a href="https://discord.gg/aa-bot" target="_blank"><button class="btn">宣伝</button></a>
+    </div>
+  </div>
+
+  <script>
+    // 初期状態ではポップアップを表示しない
+  </script>
+</body>
+</html>
